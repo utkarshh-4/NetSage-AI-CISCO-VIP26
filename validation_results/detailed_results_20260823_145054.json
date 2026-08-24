@@ -1,0 +1,2357 @@
+[
+  {
+    "case_id": "NET-001",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Sub-interface administratively down",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No gateway misconfiguration detected in available evidence",
+        "evidence": [
+          "Gateway information present, no mismatch found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Interface down state detected",
+        "evidence": [
+          "Found pattern in show_outputs: administratively down",
+          "Found pattern in show_outputs: line protocol is down",
+          "Interfaces mentioned: GigabitEthernet0/0.10"
+        ],
+        "confidence": "high"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No routing issues detected in available evidence",
+        "evidence": [
+          "Routing information present, no issues found"
+        ],
+        "confidence": "medium"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.660075"
+  },
+  {
+    "case_id": "NET-002",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "DHCP Scope Pool Exhaustion",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No routing issues detected in available evidence",
+        "evidence": [
+          "Routing information present, no issues found"
+        ],
+        "confidence": "medium"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.663642"
+  },
+  {
+    "case_id": "NET-003",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "DNS service disabled on client subnet gateway",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine subnet mask status",
+        "evidence": [
+          "No subnet mask information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.663642"
+  },
+  {
+    "case_id": "NET-004",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "OSPF Hello Timer Mismatch",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No routing issues detected in available evidence",
+        "evidence": [
+          "Routing information present, no issues found"
+        ],
+        "confidence": "medium"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.664922"
+  },
+  {
+    "case_id": "NET-005",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Extended ACL blocking HTTP traffic",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Routing configuration issue detected",
+        "evidence": [
+          "Found pattern in symptom: unreachable"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.665503"
+  },
+  {
+    "case_id": "NET-006",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "NAT Overload/PAT keyword missing",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No routing issues detected in available evidence",
+        "evidence": [
+          "Routing information present, no issues found"
+        ],
+        "confidence": "medium"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.666018"
+  },
+  {
+    "case_id": "NET-007",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Overly permissive ACL on Guest VLAN",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.666018"
+  },
+  {
+    "case_id": "NET-008",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "VLAN pruned/missing from trunk allowed list",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "VLAN configuration issue detected",
+        "evidence": [
+          "Found pattern in show_outputs: VLAN.*missing",
+          "Found pattern in show_outputs: missing.*from.*allowed.*list"
+        ],
+        "confidence": "high"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.666018"
+  },
+  {
+    "case_id": "NET-009",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Host Default Gateway IP Misconfiguration",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No gateway misconfiguration detected in available evidence",
+        "evidence": [
+          "Gateway information present, no mismatch found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.667427"
+  },
+  {
+    "case_id": "NET-010",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Management SVI interface in shutdown state",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Interface down state detected",
+        "evidence": [
+          "Found 'shutdown' without 'no shutdown'",
+          "Interfaces mentioned: Vlan1"
+        ],
+        "confidence": "high"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No VLAN configuration issues detected in available evidence",
+        "evidence": [
+          "VLAN information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Routing configuration issue detected",
+        "evidence": [
+          "Found pattern in symptom: unreachable"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.667427"
+  },
+  {
+    "case_id": "NET-011",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Inter-switch link configured as access instead of trunk",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No VLAN configuration issues detected in available evidence",
+        "evidence": [
+          "VLAN information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.668445"
+  },
+  {
+    "case_id": "NET-012",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Passive interface enabled on active OSPF link",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No interface down states detected in available evidence",
+        "evidence": [
+          "Interface information present, all interfaces appear up"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Routing configuration issue detected",
+        "evidence": [
+          "Found pattern in symptom: missing.*route",
+          "Found pattern in symptom: route.*missing",
+          "Found pattern in show_outputs: passive-interface",
+          "Passive interface configured: Serial0/1/0"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.668445"
+  },
+  {
+    "case_id": "NET-013",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Switch port assigned to wrong access VLAN",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No interface down states detected in available evidence",
+        "evidence": [
+          "Interface information present, all interfaces appear up"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No VLAN configuration issues detected in available evidence",
+        "evidence": [
+          "VLAN information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.668445"
+  },
+  {
+    "case_id": "NET-014",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Missing IP Helper-Address for DHCP Relay",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No interface down states detected in available evidence",
+        "evidence": [
+          "Interface information present, all interfaces appear up"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No routing issues detected in available evidence",
+        "evidence": [
+          "Routing information present, no issues found"
+        ],
+        "confidence": "medium"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.669897"
+  },
+  {
+    "case_id": "NET-015",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Invalid static route next-hop IP address",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Routing configuration issue detected",
+        "evidence": [
+          "Found pattern in show_outputs: unreachable",
+          "Found pattern in show_outputs: next-hop.*unreachable",
+          "Static route next-hop 10.0.0.5 unreachable for network 172.16.0.0/255.255.0.0"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.669897"
+  },
+  {
+    "case_id": "NET-016",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "ACL missing FTP control port 21 permit rule",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.671016"
+  },
+  {
+    "case_id": "NET-017",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "NAT interface direction missing on internal interface",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.671016"
+  },
+  {
+    "case_id": "NET-018",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "RADIUS Shared Secret Mismatch",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine subnet mask status",
+        "evidence": [
+          "No subnet mask information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.672304"
+  },
+  {
+    "case_id": "NET-019",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Native VLAN Mismatch on trunk link",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No VLAN configuration issues detected in available evidence",
+        "evidence": [
+          "VLAN information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.672304"
+  },
+  {
+    "case_id": "NET-020",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Default Gateway outside client subnet range",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Subnet mask configuration issue detected",
+        "evidence": [
+          "Found pattern in show_outputs: mask\\s+\\d+\\.\\d+\\.\\d+\\.\\d+.*outside.*subnet",
+          "Found pattern in show_outputs: subnet.*boundary"
+        ],
+        "confidence": "high"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Default gateway misconfiguration detected",
+        "evidence": [
+          "Found pattern in show_outputs: gateway.*outside.*subnet",
+          "Gateway 10.1.1.30 is outside subnet boundary",
+          "Gateway 10.1.1.30 is outside subnet boundary"
+        ],
+        "confidence": "high"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.673306"
+  },
+  {
+    "case_id": "NET-021",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "OSPF redistribution missing subnets flag",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine subnet mask status",
+        "evidence": [
+          "No subnet mask information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Routing configuration issue detected",
+        "evidence": [
+          "Found pattern in show_outputs: route.*missing",
+          "Found pattern in show_outputs: missing.*subnets"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.673306"
+  },
+  {
+    "case_id": "NET-022",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "ACL blocking SSL/TLS port 443",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine subnet mask status",
+        "evidence": [
+          "No subnet mask information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.673306"
+  },
+  {
+    "case_id": "NET-023",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Duplicate IP Address Assignment",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Duplicate IP address detected in network evidence",
+        "evidence": [
+          "Found pattern in show_outputs: Duplicate address",
+          "Found pattern in show_outputs: DUP_ADDR",
+          "Found pattern in symptom: duplicate IP"
+        ],
+        "confidence": "high"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No interface down states detected in available evidence",
+        "evidence": [
+          "Interface information present, all interfaces appear up"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.674306"
+  },
+  {
+    "case_id": "NET-024",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "VTP Domain Name Mismatch ",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine subnet mask status",
+        "evidence": [
+          "No subnet mask information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.674813"
+  },
+  {
+    "case_id": "NET-025",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Uplink trunk port not configured as DAI trusted",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No interface down states detected in available evidence",
+        "evidence": [
+          "Interface information present, all interfaces appear up"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No VLAN configuration issues detected in available evidence",
+        "evidence": [
+          "VLAN information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.674813"
+  },
+  {
+    "case_id": "NET-026",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Port security violation limit exceeded",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.674813"
+  },
+  {
+    "case_id": "NET-027",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "HSRP Timer Mismatch between peers",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine subnet mask status",
+        "evidence": [
+          "No subnet mask information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.675821"
+  },
+  {
+    "case_id": "NET-028",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Missing 802.1Q encapsulation on sub-interface",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No duplicate IP addresses detected in available evidence",
+        "evidence": [
+          "IP address information present, no duplicates found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No interface down states detected in available evidence",
+        "evidence": [
+          "Interface information present, all interfaces appear up"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Routing configuration issue detected",
+        "evidence": [
+          "Found pattern in symptom: route.*missing"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.675821"
+  },
+  {
+    "case_id": "NET-029",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "IPv6 Router Advertisements (RA) suppressed",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No interface down states detected in available evidence",
+        "evidence": [
+          "Interface information present, all interfaces appear up"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No routing issues detected in available evidence",
+        "evidence": [
+          "Routing information present, no issues found"
+        ],
+        "confidence": "medium"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.676822"
+  },
+  {
+    "case_id": "NET-030",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "CDP disabled globally on device",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": null,
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine gateway configuration status",
+        "evidence": [
+          "No gateway information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine interface state",
+        "evidence": [
+          "No interface information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine routing configuration status",
+        "evidence": [
+          "No routing information found in case data"
+        ],
+        "confidence": "low"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": "AI diagnosis skipped (SKIP_AI=true)",
+    "timestamp": "2026-08-23T14:50:54.677327"
+  }
+]

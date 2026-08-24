@@ -1,0 +1,31 @@
+Case ID,Success,Data Valid,Rule Check Success,AI Success,Schema Valid,AI Agreement,Insufficient Evidence,Expected Fault,AI Root Cause,Error Message
+NET-001,True,True,True,False,False,False,True,Sub-interface administratively down,,AI diagnosis error: OpenAI API returned an error
+NET-002,True,True,True,False,False,False,True,DHCP Scope Pool Exhaustion,,AI diagnosis error: OpenAI API returned an error
+NET-003,True,True,True,False,False,False,True,DNS service disabled on client subnet gateway,,AI diagnosis error: OpenAI API returned an error
+NET-004,True,True,True,False,False,False,True,OSPF Hello Timer Mismatch,,AI diagnosis error: OpenAI API returned an error
+NET-005,True,True,True,False,False,False,True,Extended ACL blocking HTTP traffic,,AI diagnosis error: OpenAI API returned an error
+NET-006,True,True,True,False,False,False,True,NAT Overload/PAT keyword missing,,AI diagnosis error: OpenAI API returned an error
+NET-007,True,True,True,False,False,False,True,Overly permissive ACL on Guest VLAN,,AI diagnosis error: OpenAI API returned an error
+NET-008,True,True,True,False,False,False,True,VLAN pruned/missing from trunk allowed list,,AI diagnosis error: OpenAI API returned an error
+NET-009,True,True,True,False,False,False,True,Host Default Gateway IP Misconfiguration,,AI diagnosis error: OpenAI API returned an error
+NET-010,True,True,True,False,False,False,True,Management SVI interface in shutdown state,,AI diagnosis error: OpenAI API returned an error
+NET-011,True,True,True,False,False,False,True,Inter-switch link configured as access instead of trunk,,AI diagnosis error: OpenAI API returned an error
+NET-012,True,True,True,False,False,False,True,Passive interface enabled on active OSPF link,,AI diagnosis error: OpenAI API returned an error
+NET-013,True,True,True,False,False,False,True,Switch port assigned to wrong access VLAN,,AI diagnosis error: OpenAI API returned an error
+NET-014,True,True,True,False,False,False,True,Missing IP Helper-Address for DHCP Relay,,AI diagnosis error: OpenAI API returned an error
+NET-015,True,True,True,False,False,False,True,Invalid static route next-hop IP address,,AI diagnosis error: OpenAI API returned an error
+NET-016,True,True,True,False,False,False,True,ACL missing FTP control port 21 permit rule,,AI diagnosis error: OpenAI API returned an error
+NET-017,True,True,True,False,False,False,True,NAT interface direction missing on internal interface,,AI diagnosis error: OpenAI API returned an error
+NET-018,True,True,True,False,False,False,True,RADIUS Shared Secret Mismatch,,AI diagnosis error: OpenAI API returned an error
+NET-019,True,True,True,False,False,False,True,Native VLAN Mismatch on trunk link,,AI diagnosis error: OpenAI API returned an error
+NET-020,True,True,True,False,False,False,True,Default Gateway outside client subnet range,,AI diagnosis error: OpenAI API returned an error
+NET-021,True,True,True,False,False,False,True,OSPF redistribution missing subnets flag,,AI diagnosis error: OpenAI API returned an error
+NET-022,True,True,True,False,False,False,True,ACL blocking SSL/TLS port 443,,AI diagnosis error: OpenAI API returned an error
+NET-023,True,True,True,False,False,False,True,Duplicate IP Address Assignment,,AI diagnosis error: OpenAI API returned an error
+NET-024,True,True,True,False,False,False,True,VTP Domain Name Mismatch ,,AI diagnosis error: OpenAI API returned an error
+NET-025,True,True,True,False,False,False,True,Uplink trunk port not configured as DAI trusted,,AI diagnosis error: OpenAI API returned an error
+NET-026,True,True,True,False,False,False,True,Port security violation limit exceeded,,AI diagnosis error: OpenAI API returned an error
+NET-027,True,True,True,False,False,False,True,HSRP Timer Mismatch between peers,,AI diagnosis error: OpenAI API returned an error
+NET-028,True,True,True,False,False,False,True,Missing 802.1Q encapsulation on sub-interface,,AI diagnosis error: OpenAI API returned an error
+NET-029,True,True,True,False,False,False,True,IPv6 Router Advertisements (RA) suppressed,,AI diagnosis error: OpenAI API returned an error
+NET-030,True,True,True,False,False,False,True,CDP disabled globally on device,,AI diagnosis error: OpenAI API returned an error

@@ -1,0 +1,2 @@
+Case ID,Success,Data Valid,Rule Check Success,AI Success,Schema Valid,AI Agreement,Insufficient Evidence,Expected Fault,AI Root Cause,Error Message
+NET-001,True,True,True,False,False,False,True,Sub-interface administratively down,,AI diagnosis error: OpenAI API returned an error

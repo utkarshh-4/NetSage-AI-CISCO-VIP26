@@ -1,0 +1,14 @@
+{
+  "total_cases": 1,
+  "successfully_processed": 1,
+  "rule_checker_failures": 0,
+  "ai_failures": 1,
+  "schema_failures": 0,
+  "insufficient_evidence_cases": 1,
+  "ai_expected_agreement": 0,
+  "human_accepted": 0,
+  "human_edited": 0,
+  "human_rejected": 0,
+  "success_rate": 1.0,
+  "ai_expected_agreement_rate": 0.0
+}

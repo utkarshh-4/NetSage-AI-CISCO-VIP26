@@ -1,0 +1,2 @@
+Case ID,Original AI Diagnosis,Relevant Evidence,Human Correction,Reason AI Was Wrong/Incomplete,Conflicting Rules Evidence,Final Accepted Diagnosis,Lesson/Limitation
+STATUS,No AI diagnoses generated during validation run,SKIP_AI=true used due to OpenAI API quota limitations,N/A,N/A,N/A,N/A,System prioritizes data integrity over fabricated results

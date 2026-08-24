@@ -1,0 +1,89 @@
+[
+  {
+    "case_id": "NET-001",
+    "success": true,
+    "data_valid": true,
+    "rule_check_success": true,
+    "ai_diagnosis_success": false,
+    "ai_schema_valid": false,
+    "expected_fault": "Sub-interface administratively down",
+    "ai_root_cause": null,
+    "ai_agreement": false,
+    "insufficient_evidence": true,
+    "error_message": "AI diagnosis error: OpenAI API returned an error",
+    "rule_results": [
+      {
+        "check_name": "duplicate_ips",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine duplicate IP status",
+        "evidence": [
+          "No IP address information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "subnet_mask",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No subnet mask issues detected in available evidence",
+        "evidence": [
+          "Subnet mask information present, no issues found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "gateway_mismatch",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No gateway misconfiguration detected in available evidence",
+        "evidence": [
+          "Gateway information present, no mismatch found"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "check_name": "interface_down",
+        "status": "DETECTED",
+        "severity": "high",
+        "message": "Interface down state detected",
+        "evidence": [
+          "Found pattern in show_outputs: administratively down",
+          "Found pattern in show_outputs: line protocol is down",
+          "Interfaces mentioned: GigabitEthernet0/0.10"
+        ],
+        "confidence": "high"
+      },
+      {
+        "check_name": "missing_vlan",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "severity": "low",
+        "message": "Insufficient evidence to determine VLAN configuration status",
+        "evidence": [
+          "No VLAN information found in case data"
+        ],
+        "confidence": "low"
+      },
+      {
+        "check_name": "missing_routes",
+        "status": "NOT_DETECTED",
+        "severity": "low",
+        "message": "No routing issues detected in available evidence",
+        "evidence": [
+          "Routing information present, no issues found"
+        ],
+        "confidence": "medium"
+      }
+    ],
+    "ai_diagnosis": null,
+    "ai_error": {
+      "error_type": "api_error",
+      "message": "OpenAI API returned an error",
+      "details": {
+        "str_error": "Error code: 404 - {'error': {'message': 'The model `gpt-4` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}"
+      },
+      "retry_possible": true
+    },
+    "timestamp": "2026-08-23T02:54:20.400202"
+  }
+]
